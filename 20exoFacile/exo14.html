@@ -1,0 +1,14 @@
+<button>table de 3</button>
+<div>Cliquer sur un bouton pour afficher la table de multiplication</div>
+
+<script>
+    const button = document.querySelector("button");
+    const div = document.querySelector("div");
+
+    button.addEventListener("click", () =>{
+        div.textContent = " ";
+        for(let i = 1; i <= 10; i++){
+            div.innerHTML +="<br/>"+ "3 * " + i + " = " + i*3 + "<br/>";
+        }
+    })
+</script>

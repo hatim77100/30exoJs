@@ -1,0 +1,11 @@
+<button onclick="incrementer()">Incrementer !</button>
+<div>Cliquer sur le bouton pour incrémenter !</div>
+
+<script>
+  const div = document.querySelector("div");
+  let resultat = 0;
+  function incrementer() {
+          resultat++
+          div.textContent = "vous avez cliqué "+resultat+" fois";
+  }
+</script>

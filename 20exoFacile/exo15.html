@@ -1,0 +1,21 @@
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"
+></script>
+
+<button>Pile ou Face</button>
+<div>Cliquer sur le bouton</div>
+<script>
+  const button = document.querySelector("button");
+  const div = document.querySelector("div");
+
+  button.addEventListener("click", ()=>{
+    if(Math.floor(Math.random() * 2) === 1) {
+        div.textContent = "Pile";
+    } else {
+        div.textContent = "Face";
+    }
+  })
+
+</script>
